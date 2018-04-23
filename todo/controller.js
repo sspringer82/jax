@@ -6,6 +6,13 @@ function listAction(req, res) {
   res.send(view.render(data));
 }
 
+function deleteAction(req, res) {
+  console.log(req.params.id);
+  // delete stuff
+  res.redirect('/todo');
+}
+
 module.exports = {
   listAction,
+  deleteAction,
 };

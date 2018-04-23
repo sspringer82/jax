@@ -7,7 +7,8 @@ const router = require('./todo');
 // app objekt erzeugen
 const app = express();
 
-app.use(express.static(__dirname + '/public'));
+// static middleware einbinden, um statische daten auszuliefern (/public Verzeichnis)
+app.use(express.static('./public'));
 
 // routing funktion auf http://localhost:8080/
 /*app.get('/', (req, res) => {
