@@ -3,8 +3,7 @@ const view = require('./view');
 
 function listAction(req, res) {
   const data = model.getAll();
-  //res.send(view.render(req.baseUrl, data));
-  res.render(__dirname + '/views/list.ejs', { name: 'Klaus' });
+  res.render(__dirname + '/views/list.ejs', { data, baseUrl: req.baseUrl });
 }
 
 function deleteAction(req, res) {
