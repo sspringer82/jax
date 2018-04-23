@@ -18,6 +18,8 @@ while (true) {
 
 const server = http.createServer((request, response) => {
   response.end('Hello Fisch');
+
+  return 'Hello World';
 });
 
 server.listen(8080, () => {

@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/sspringer82/jax.git"
   },
-  "keywords": ["todo", "list", "fancy"],
+  "keywords": [
+    "todo",
+    "list",
+    "fancy"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,7 +24,8 @@
   },
   "homepage": "https://github.com/sspringer82/jax#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "mocha": "^5.1.1",
