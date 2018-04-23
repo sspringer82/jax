@@ -11,11 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/sspringer82/jax.git"
   },
-  "keywords": [
-    "todo",
-    "list",
-    "fancy"
-  ],
+  "keywords": ["todo", "list", "fancy"],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -27,5 +23,8 @@
   },
   "devDependencies": {
     "mocha": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=9"
   }
 }
