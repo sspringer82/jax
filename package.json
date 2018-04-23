@@ -25,9 +25,11 @@
   "homepage": "https://github.com/sspringer82/jax#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "csv-db": "^0.2.1",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "pm2": "^2.10.2"
   },
   "devDependencies": {
     "mocha": "^5.1.1",

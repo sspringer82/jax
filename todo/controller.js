@@ -1,9 +1,17 @@
 const model = require('./model');
 const view = require('./view');
 
-function listAction(req, res) {
-  const data = model.getAll();
-  res.render(__dirname + '/views/list.ejs', { data, baseUrl: req.baseUrl });
+async function listAction(req, res) {
+  try {
+    const data = await model.getAll();
+    res.render(__dirname + '/views/list.ejs', {
+      data,
+      baseUrl: req.baseUrl,
+    });
+  } catch (e) {
+    console.error(e);
+    res.send('Whoops');
+  }
 }
 
 function deleteAction(req, res) {

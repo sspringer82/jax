@@ -1,13 +1,9 @@
-let data = [
-  { id: 1, title: 'sleep' },
-  { id: 2, title: 'eat' },
-  { id: 3, title: 'code' },
-  { id: 4, title: 'repeat' },
-];
+const CsvDb = require('csv-db');
+const csvDb = new CsvDb('./db/db.csv', ['id', 'title']);
 
 module.exports = {
   getAll() {
-    return data;
+    return csvDb.get();
   },
   delete(id) {
     data = data.filter(item => item.id !== id);
