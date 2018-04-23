@@ -9,6 +9,8 @@ const router = require('./todo');
 
 // app objekt erzeugen
 const app = express();
+
+// use morgan logger
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, 'access.log'),
   {
@@ -19,6 +21,8 @@ app.use(morgan('combined', { stream: accessLogStream }));
 
 // static middleware einbinden, um statische daten auszuliefern (/public Verzeichnis)
 app.use(express.static('./public'));
+
+app.set('view engine', 'ejs');
 
 // routing funktion auf http://localhost:8080/
 /*app.get('/', (req, res) => {
