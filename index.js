@@ -7,6 +7,8 @@
 // node --inspect index.js
 // in den browser wechseln: chrome://inspect
 
+// https://github.com/npm/node-semver
+
 const http = require('http');
 
 /* don't try this at home
