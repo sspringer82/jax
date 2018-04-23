@@ -22,9 +22,9 @@ function render(baseUrl, data) {
         .map(
           todo => `
         <tr>
-          <td>${todo}</td>
+          <td>${todo.title}</td>
           <td>
-            <a href="${baseUrl}/delete/${todo}">löschen</a>
+            <a href="${baseUrl}/delete/${todo.id}">löschen</a>
           </td>
         </tr>
         `,

@@ -7,7 +7,8 @@ function listAction(req, res) {
 }
 
 function deleteAction(req, res) {
-  model.delete(req.params.id);
+  const id = parseInt(req.params.id, 10);
+  model.delete(id);
   res.redirect(req.baseUrl);
 }
 

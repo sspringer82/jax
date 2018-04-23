@@ -10,6 +10,6 @@ module.exports = {
     return data;
   },
   delete(id) {
-    data = data.filter(item => item !== id);
+    data = data.filter(item => item.id !== id);
   },
 };
