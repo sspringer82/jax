@@ -5,7 +5,8 @@
   "description": "my fancy todo list",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
-    "mocha": "^5.1.1"
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.3"
   },
   "engines": {
     "node": ">=9"
