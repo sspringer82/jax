@@ -4,6 +4,7 @@ const express = require('express');
 // app objekt erzeugen
 const app = express();
 
+// routing funktion auf http://localhost:8080/
 app.get('/', (req, res) => {
   res.json('Hello World');
 });
