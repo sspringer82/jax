@@ -14,6 +14,7 @@ function render(data) {
       <thead>
         <tr>
           <th>Title</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -22,6 +23,9 @@ function render(data) {
           todo => `
         <tr>
           <td>${todo}</td>
+          <td>
+            <a href="/todo/delete/${todo}">löschen</a>
+          </td>
         </tr>
         `,
         )
