@@ -1,6 +1,7 @@
 // express laden
 const express = require('express');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 
@@ -18,6 +19,9 @@ const accessLogStream = fs.createWriteStream(
   },
 );
 app.use(morgan('combined', { stream: accessLogStream }));
+
+// configure body parser
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // static middleware einbinden, um statische daten auszuliefern (/public Verzeichnis)
 app.use(express.static('./public'));
