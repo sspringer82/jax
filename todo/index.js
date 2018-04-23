@@ -1,9 +1,8 @@
 const Router = require('express').Router;
+const controller = require('./controller');
 
 const router = Router();
 
-router.get('/', (req, res) => {
-  res.send('sleep, eat, code, repeat');
-});
+router.get('/', controller.listAction);
 
 module.exports = router;
