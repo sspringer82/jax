@@ -6,6 +6,7 @@ const app = express();
 
 // routing funktion auf http://localhost:8080/
 app.get('/', (req, res) => {
+  // expliziter Breakpoint mit debugger;
   res.json('Hello World');
 });
 
