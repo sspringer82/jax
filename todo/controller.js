@@ -3,12 +3,12 @@ const view = require('./view');
 
 function listAction(req, res) {
   const data = model.getAll();
-  res.send(view.render(data));
+  res.send(view.render(req.baseUrl, data));
 }
 
 function deleteAction(req, res) {
   model.delete(req.params.id);
-  res.redirect('/todo');
+  res.redirect(req.baseUrl);
 }
 
 module.exports = {

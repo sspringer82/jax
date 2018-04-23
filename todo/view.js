@@ -1,4 +1,4 @@
-function render(data) {
+function render(baseUrl, data) {
   const result = `
   <!DOCTYPE html>
   <html lang="en">
@@ -24,7 +24,7 @@ function render(data) {
         <tr>
           <td>${todo}</td>
           <td>
-            <a href="/todo/delete/${todo}">löschen</a>
+            <a href="${baseUrl}/delete/${todo}">löschen</a>
           </td>
         </tr>
         `,
